@@ -100,6 +100,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="73"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="button4Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdj-4d-URl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -120,6 +123,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="73"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="button6Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7T-eP-yyj"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EQ-WU-FMX">
                                                 <rect key="frame" x="0.0" y="73" width="76" height="20"/>
@@ -149,6 +155,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="73.5"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="button8Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rda-Yz-4Qo"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZm-HT-WDn">
                                                 <rect key="frame" x="0.0" y="73.5" width="76" height="20"/>
@@ -178,6 +187,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="73.5"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="button9Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AoD-oH-5S5"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVb-qS-6iT">
                                                 <rect key="frame" x="0.0" y="73.5" width="76" height="20"/>
@@ -246,6 +258,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="73.5"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="button7Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Nk-bv-fjI"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fk1-F8-pPv">
                                                 <rect key="frame" x="0.0" y="73.5" width="76" height="20"/>
@@ -284,6 +299,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="73"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="button5Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUU-WB-gnE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -71,6 +71,55 @@ class EmotionViewController: UIViewController {
         label3.text = "사랑해 \(final3)"
     }
     
+    @IBAction func button4Clicked(_ sender: UIButton) {
+        let before4 = UserDefaults.standard.integer(forKey: "count4")
+        let after4 = before4 + 1
+        UserDefaults.standard.setValue(after4, forKey: "count4")
+        let final4 = UserDefaults.standard.integer(forKey: "count4")
+        label4.text = "화를내 \(final4)"
+    }
+    
+    @IBAction func button5Clicked(_ sender: UIButton) {
+        let before5 = UserDefaults.standard.integer(forKey: "count5")
+        let after5 = before5 + 1
+        UserDefaults.standard.setValue(after5, forKey: "count5")
+        let final5 = UserDefaults.standard.integer(forKey: "count5")
+        label5.text = "당황해 \(final5)"
+    }
+    
+    @IBAction func button6Clicked(_ sender: UIButton) {
+        let before6 = UserDefaults.standard.integer(forKey: "count6")
+        let after6 = before6 + 1
+        UserDefaults.standard.setValue(after6, forKey: "count6")
+        let final6 = UserDefaults.standard.integer(forKey: "count6")
+        label6.text = "막막해 \(final6)"
+    }
+    
+    @IBAction func button7Clicked(_ sender: UIButton) {
+        let before7 = UserDefaults.standard.integer(forKey: "count7")
+        let after7 = before7 + 1
+        UserDefaults.standard.setValue(after7, forKey: "count7")
+        let final7 = UserDefaults.standard.integer(forKey: "count7")
+        label7.text = "곤란해 \(final7)"
+    }
+    
+    
+    @IBAction func button8Clicked(_ sender: UIButton) {
+        let before8 = UserDefaults.standard.integer(forKey: "count8")
+        let after8 = before8 + 1
+        UserDefaults.standard.setValue(after8, forKey: "count8")
+        let final8 = UserDefaults.standard.integer(forKey: "count8")
+        label8.text = "우울해 \(final8)"
+    }
+    
+    @IBAction func button9Clicked(_ sender: UIButton) {
+        let before9 = UserDefaults.standard.integer(forKey: "count9")
+        let after9 = before9 + 1
+        UserDefaults.standard.setValue(after9, forKey: "count9")
+        let final9 = UserDefaults.standard.integer(forKey: "count9")
+        label9.text = "억울해 \(final9)"
+    }
+    
     private func buttonLogic(slime: String, emotionButton: UIButton!) {
         emotionButton.setImage(UIImage(named: slime), for: .normal)
     }
