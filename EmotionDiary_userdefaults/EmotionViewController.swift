@@ -4,6 +4,7 @@
 //
 //  Created by 양승혜 on 5/23/24.
 //
+// 열거형 사용해서 값 구현, 초기화 : https://co-dong.tistory.com/65
 
 import UIKit
 
@@ -31,6 +32,8 @@ class EmotionViewController: UIViewController {
     @IBOutlet var label8: UILabel!
     @IBOutlet var label9: UILabel!
     
+    @IBOutlet var resetButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,6 +47,7 @@ class EmotionViewController: UIViewController {
         button7Default()
         button8Default()
         button9Default()
+        resetButtonUI()
     }
     
     
@@ -103,7 +107,6 @@ class EmotionViewController: UIViewController {
         label7.text = "곤란해 \(final7)"
     }
     
-    
     @IBAction func button8Clicked(_ sender: UIButton) {
         let before8 = UserDefaults.standard.integer(forKey: "count8")
         let after8 = before8 + 1
@@ -120,6 +123,36 @@ class EmotionViewController: UIViewController {
         label9.text = "억울해 \(final9)"
     }
     
+    @IBAction func resetButtonTapped(_ sender: UIButton) {
+        UserDefaults.standard.removeObject(forKey: "count1")
+        UserDefaults.standard.removeObject(forKey: "count2")
+        UserDefaults.standard.removeObject(forKey: "count3")
+        UserDefaults.standard.removeObject(forKey: "count4")
+        UserDefaults.standard.removeObject(forKey: "count5")
+        UserDefaults.standard.removeObject(forKey: "count6")
+        UserDefaults.standard.removeObject(forKey: "count7")
+        UserDefaults.standard.removeObject(forKey: "count8")
+        UserDefaults.standard.removeObject(forKey: "count9")
+        let reset1 = UserDefaults.standard.integer(forKey: "count1")
+        let reset2 = UserDefaults.standard.integer(forKey: "count2")
+        let reset3 = UserDefaults.standard.integer(forKey: "count3")
+        let reset4 = UserDefaults.standard.integer(forKey: "count4")
+        let reset5 = UserDefaults.standard.integer(forKey: "count5")
+        let reset6 = UserDefaults.standard.integer(forKey: "count6")
+        let reset7 = UserDefaults.standard.integer(forKey: "count7")
+        let reset8 = UserDefaults.standard.integer(forKey: "count8")
+        let reset9 = UserDefaults.standard.integer(forKey: "count9")
+        label1.text = "행복해 \(reset1)"
+        label2.text = "좋아해 \(reset2)"
+        label3.text = "사랑해 \(reset3)"
+        label4.text = "화를내 \(reset4)"
+        label5.text = "당황해 \(reset5)"
+        label6.text = "막막해 \(reset6)"
+        label7.text = "곤란해 \(reset7)"
+        label8.text = "우울해 \(reset8)"
+        label9.text = "억울해 \(reset9)"
+    }
+    
     private func buttonLogic(slime: String, emotionButton: UIButton!) {
         emotionButton.setImage(UIImage(named: slime), for: .normal)
     }
@@ -131,7 +164,6 @@ class EmotionViewController: UIViewController {
         
         for index in slimes.indices {
             buttonLogic(slime: slimes[index], emotionButton: emotionButtons[index])
-            
         }
     }
     
@@ -189,4 +221,11 @@ class EmotionViewController: UIViewController {
         label9.textAlignment = .center
     }
     
+    private func resetButtonUI() {
+        resetButton.setTitle("전체 초기화", for: .normal)
+        resetButton.backgroundColor = .systemPink
+        resetButton.setTitleColor(.white, for: .normal)
+        resetButton.setTitleColor(.lightGray, for: .highlighted)
+        resetButton.layer.cornerRadius = 10
+    }
 }

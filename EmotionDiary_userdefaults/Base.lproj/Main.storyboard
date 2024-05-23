@@ -361,12 +361,27 @@
                                     <constraint firstItem="xTV-ij-c0C" firstAttribute="width" secondItem="fss-yD-ybA" secondAttribute="width" id="yLQ-AS-KIn"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yw-4l-VA8">
+                                <rect key="frame" x="60" y="482" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Cqn-h6-OsW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCM-P8-giW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XPV-qw-Qit" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Eso-Bl-l4f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Yw-4l-VA8" secondAttribute="trailing" constant="60" id="IfE-ev-cgO"/>
                             <constraint firstItem="XPV-qw-Qit" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MVD-YO-clF"/>
+                            <constraint firstItem="9Yw-4l-VA8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mej-sA-b0K"/>
+                            <constraint firstItem="9Yw-4l-VA8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="UWn-iN-q5i"/>
+                            <constraint firstItem="9Yw-4l-VA8" firstAttribute="top" secondItem="XPV-qw-Qit" secondAttribute="bottom" constant="42" id="YHO-6o-t9A"/>
                             <constraint firstItem="XPV-qw-Qit" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="iTd-BJ-gkg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XPV-qw-Qit" secondAttribute="trailing" constant="30" id="rH3-Gp-LXz"/>
                         </constraints>
@@ -395,6 +410,7 @@
                         <outlet property="label7" destination="Fk1-F8-pPv" id="nvz-QS-ybd"/>
                         <outlet property="label8" destination="AZm-HT-WDn" id="CvA-KM-REY"/>
                         <outlet property="label9" destination="tVb-qS-6iT" id="e6m-5P-fhl"/>
+                        <outlet property="resetButton" destination="9Yw-4l-VA8" id="Hud-mF-qon"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
